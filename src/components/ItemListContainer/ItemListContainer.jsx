@@ -1,10 +1,27 @@
 import './ItemListContainer.css'
 import React from 'react'
+import data from "../../../productos.json";
+import { useState, useEffect } from 'react';
+import ItemList from '../ItemList/ItemList';
 
-const ItemListContainer = ({props}) => {
+
+const ItemListContainer = () => {
+    const [productos, setProductos] = useState([]);
+    const pedirProductos = () => {
+        return new Promise((resolve, reject) => {
+            resolve(data)
+        })
+    }
+    useEffect(() => {
+        pedirProductos()
+            .then((res) => { setProductos(res) })
+    }, [])
+
     return (
-        <h2 className='titulo'>{props}</h2>
+        <div>
+            <ItemList productos={productos} />
+        </div>
     )
-}
+};
 
 export default ItemListContainer

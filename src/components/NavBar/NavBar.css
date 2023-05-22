@@ -1,7 +1,32 @@
+.navbar-nav{
+    gap: 1.5rem;
+}
+.navbar-toggler{
+    padding: 0.3rem;
+}
+.navbar-toggler-icon{
+    width: 1.3rem;
+    height: 1.3rem;
+    vertical-align: top;
+}
+
 li{
-    cursor: pointer;
     margin: 0.5 rem;
 }
+.nav-link:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
 .ponceLogo{
-    width: 6rem;
+    width: 15rem;
+    margin-right: 3rem;
+    margin-left: 1rem;
+}
+header{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+.container-fluid{
+    padding: 0;
 }

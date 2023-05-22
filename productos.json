@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "nombre": "Icon Pear Shape Diamond",
+        "data":"White Gold",
+        "precio": 7000.00,
+        "cantidad": 1,
+        "imagen": "./src/assets/img/joyas/destacado1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Icon Round Diamond Earrings",
+        "data":"White Gold",
+        "precio": 13500.00,
+        "cantidad": 1,
+        "imagen": "./src/assets/img/joyas/destacado2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Icon Cushion Cut Yellow Diamond Pendant",
+        "data":"Yellow Gold",
+        "precio": 31500.00,
+        "cantidad": 1,
+        "imagen": "./src/assets/img/joyas/destacado3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Icon Cushion Cut Yellow Diamond Ring",
+        "data":"Yellow Gold",
+        "precio": 41000.00,
+        "cantidad": 1,
+        "imagen": "./src/assets/img/joyas/destacado4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Inspired by Twombly Diamond Hoop Pendant",
+        "data":"White Gold",
+        "precio": 6000.00,
+        "cantidad": 1,
+        "imagen": "./src/assets/img/joyas/destacado5.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Inspired by Twombly Round Diamond Pavé Band",
+        "data":"White Gold",
+        "precio": 9000.00,
+        "cantidad": 1,
+        "imagen": "./src/assets/img/joyas/destacado6.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Inspired by Twombly Diamond Hoop Pendant",
+        "data":"Yellow Gold",
+        "precio": 7500.00,
+        "cantidad": 1,
+        "imagen": "./src/assets/img/joyas/destacado7.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Inspired by Twombly Round Diamond Pavé Band",
+        "data":"Yellow Gold",
+        "precio": 12500.00,
+        "cantidad": 1,
+        "imagen": "./src/assets/img/joyas/destacado8.jpg"
+    }
+]
