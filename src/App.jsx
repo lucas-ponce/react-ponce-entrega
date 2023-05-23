@@ -3,8 +3,8 @@ import NavBar from './components/NavBar/navBar';
 import { BrowserRouter,Route,Routes} from 'react-router-dom';
 import Home from './components/Home/Home';
 import Nosotros from './components/Nosotros/nosotros';
-import Fragancias from './components/Fragancias/fragancias';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path="/item/:id" element={<ItemDetailContainer/>} />
-          <Route path='/fragancias/:id' element={<Fragancias/>} />
+          <Route path='/ponce/:categoria' element={<ItemListContainer/>} />
           <Route path='/nosotros' element={<Nosotros/>} />
         </Routes>
       </BrowserRouter>
