@@ -5,7 +5,7 @@
         "data":"White Gold",
         "precio": 7000.00,
         "cantidad": 1,
-        "imagen": "./src/assets/img/joyas/destacado1.jpg"
+        "imagen": "/public/img/joyas/destacado1.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "data":"White Gold",
         "precio": 13500.00,
         "cantidad": 1,
-        "imagen": "./src/assets/img/joyas/destacado2.jpg"
+        "imagen": "/public/img/joyas/destacado2.jpg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "data":"Yellow Gold",
         "precio": 31500.00,
         "cantidad": 1,
-        "imagen": "./src/assets/img/joyas/destacado3.jpg"
+        "imagen": "/public/img/joyas/destacado3.jpg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "data":"Yellow Gold",
         "precio": 41000.00,
         "cantidad": 1,
-        "imagen": "./src/assets/img/joyas/destacado4.jpg"
+        "imagen": "/public/img/joyas/destacado4.jpg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "data":"White Gold",
         "precio": 6000.00,
         "cantidad": 1,
-        "imagen": "./src/assets/img/joyas/destacado5.jpg"
+        "imagen": "/public/img/joyas/destacado5.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "data":"White Gold",
         "precio": 9000.00,
         "cantidad": 1,
-        "imagen": "./src/assets/img/joyas/destacado6.jpg"
+        "imagen": "/public/img/joyas/destacado6.jpg"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "data":"Yellow Gold",
         "precio": 7500.00,
         "cantidad": 1,
-        "imagen": "./src/assets/img/joyas/destacado7.jpg"
+        "imagen": "/public/img/joyas/destacado7.jpg"
     },
     {
         "id": 8,
@@ -61,6 +61,6 @@
         "data":"Yellow Gold",
         "precio": 12500.00,
         "cantidad": 1,
-        "imagen": "./src/assets/img/joyas/destacado8.jpg"
+        "imagen": "/public/img/joyas/destacado8.jpg"
     }
 ]
