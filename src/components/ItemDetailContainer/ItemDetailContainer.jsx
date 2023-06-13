@@ -1,34 +1,33 @@
-import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom";
-import ItemDetail from "../ItemDetail/ItemDetail";
-import data from "../../../productos.json";
 
+import { useState, useEffect } from 'react'
+import ItemDetail from '../ItemDetail/ItemDetail';
+import { useParams } from 'react-router-dom';
+
+//Importamos las nuevas funciones: 
+import { getDoc, doc } from "firebase/firestore";
+import {db} from "../../services/config"
 
 const ItemDetailContainer = () => {
-    const id = useParams().id;
-    console.log(id);
-    const [item, setItem] = useState(null);
-    const pedirItemPorId = (iden) => {
-        return new Promise((resolve, reject) => {
-            const item = data.find((el) => el.id === iden);
-            if (item) {
-                resolve(item);
-            } else {
-                reject({
-                    error: "No se encontró el producto"
-                })
-            }
-        })
-    }
+    const [producto, setProducto] = useState(null);
+
+    const { idItem } = useParams();
+
     useEffect(() => {
-        pedirItemPorId(Number(id))
-            .then((res) => {
-                setItem(res);
+        const nuevoDoc = doc(db, "inventario", idItem);
+
+        getDoc(nuevoDoc)
+            .then(res => {
+                const data = res.data();
+                const nuevoProducto = { id: res.id, ...data }
+                setProducto(nuevoProducto);
             })
-    }, [id])
+            .catch(error => console.log(error))
+    }, [idItem])
+
+
     return (
         <div>
-            {item && <ItemDetail item={item} />}
+            <ItemDetail {...producto} />
         </div>
     )
 }

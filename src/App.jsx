@@ -5,6 +5,9 @@ import Home from './components/Home/Home';
 import Nosotros from './components/Nosotros/nosotros';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import { CarritoProvider } from './context/CarritoContext';
+import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Chekout';
 
 
 function App() {
@@ -12,13 +15,17 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <CarritoProvider>
       <NavBar/>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path="/item/:id" element={<ItemDetailContainer/>} />
-          <Route path='/ponce/:categoria' element={<ItemListContainer/>} />
+          <Route path='/ponce/:idCategoria' element={<ItemListContainer />} />
+          <Route path='/item/:idItem' element={<ItemDetailContainer />} />
           <Route path='/nosotros' element={<Nosotros/>} />
+          <Route path='/cart' element = {<Cart/>} />
+          <Route path='/checkout' element={ <Checkout/>} />
         </Routes>
+        </CarritoProvider>
       </BrowserRouter>
     </>
   );
